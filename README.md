@@ -1,6 +1,6 @@
 # Donor Contact Report Mining & Affinity Tagging Pipeline
+### Advancement Contact Report Mining & Donor Tagging Pipeline
 NLP-driven extraction of donor interest tags, giving affinity, and engagement sentiment from unstructured Advancement contact reports for CRM enrichment.
-# Advancement Contact Report Mining & Donor Tagging Pipeline
 
 ## Overview
 This project applies Natural Language Processing (NLP) and text mining to unstructured Fundraisers contact reports. It automatically extracts donor interest tags, 
