@@ -11,9 +11,28 @@ categorizes engagement sentiment, and outputs structured data ready for CRM inse
 - **Hyper-Personalized Outreach:** Enables targeted email segmentation based on specific donor passions (e.g., student incubators, equity funds, specific academic colleges).
 - **Pipeline Risk Detection:** Flags negative or neutral sentiment notes for immediate manager review.
 
-## Portfolio Visualization
+## Visualization & Dashboard Outputs
+### 1. Key Keyword & Affinity Word Cloud
+Highlights high-frequency donor interests and themes extracted across all contact notes.
 ![Donor Interest & Affinity Word Cloud](OF_p3_donor_wordcloud.png)
 
+### 2. CRM Tag Distribution
+Shows the frequency of extracted interest categories across the constituent pipeline.
+![CRM Tag Distribution](OF_p4_crm_tag_distribution.png)
+
+### 3. Engagement Sentiment & Pipeline Risk Breakdown
+Categorizes overall donor sentiment to isolate positive leads and identify at-risk major donors needing executive intervention.
+![Sentiment Breakdown](OF_p5_sentiment_breakdown.png)
+
+## Key Features
+- **Automated CRM Tag Extraction:** Uses multi-keyword regex matching to categorize notes into actionable CRM interest tags (`Lassonde_Entrepreneurship`, `Underrepresented_Founders`, `HairCare_Beauty_ConsumerTech`, `Analytics_PublicHealth`, `Scholarships_Fellowships`, `Capital_Facilities`).
+- **Lexicon Sentiment & Risk Scoring:** Calculates a normalized sentiment score ($-1.0$ to $+1.0$) to categorize notes as `Positive`, `Neutral`, or `Negative (At Risk)`.
+- **Scalable Multi-Year Dataset:** Tested on 500 multi-year contact reports representing 100 unique constituents and 5 gift officers spanning October 2024 to September 2026.
+- **Data Export Ready:** Generates an enriched CSV (`contact_reports_enriched.csv`) pre-formatted for direct CRM ingestion or Tableau/Power BI dashboarding.
+- 
 ## Tech Stack
-- **Python:** `pandas`, `nltk`, `wordcloud`, `matplotlib`
+- **Language:** Python 3.x
+- **Data Manipulation:** `pandas`, `numpy`
+- **Text Processing & Regular Expressions:** `re`
+- **Data Visualization:** `nltk`,`wordcloud`, `matplotlib`
 - **NLP Techniques:** Tokenization, Stop-word Removal, TF-IDF Keyphrase Extraction, VADER Sentiment Analysis
