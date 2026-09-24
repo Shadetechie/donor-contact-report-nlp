@@ -52,3 +52,17 @@ donor-contact-report-nlp/
 ├── crm_tag_distribution.png     # Visual 2: Tag frequency bar chart
 ├── sentiment_breakdown.png      # Visual 3: Sentiment pie chart
 └── README.md                    # Project documentation
+
+## Getting Started
+1. Clone the Repository
+git clone [https://github.com/Shadetechie/donor-contact-report-nlp.git](https://github.com/Shadetechie/donor-contact-report-nlp.git)
+cd donor-contact-report-nlp
+
+2. Install Required Libraries
+pip install pandas numpy wordcloud matplotlib
+
+3. Generate Synthetic Data
+python OF_generate_data.py
+
+4. Run the NLP Pipeline & Generate Visualizations
+python OF_process_nlp_reports.py
