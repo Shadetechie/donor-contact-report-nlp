@@ -36,3 +36,19 @@ Categorizes overall donor sentiment to isolate positive leads and identify at-ri
 - **Text Processing & Regular Expressions:** `re`
 - **Data Visualization:** `nltk`,`wordcloud`, `matplotlib`
 - **NLP Techniques:** Tokenization, Stop-word Removal, TF-IDF Keyphrase Extraction, VADER Sentiment Analysis
+
+---
+
+## Repository Structure
+
+```text
+donor-contact-report-nlp/
+│
+├── generate_data.py             # Script 1: Synthetic 500-report data generator
+├── process_nlp_reports.py       # Script 2: NLP tag extraction, sentiment engine, & viz
+├── contact_reports.csv          # Raw synthetic contact report dataset (500 rows)
+├── contact_reports_enriched.csv # Processed dataset with extracted tags & sentiment
+├── donor_wordcloud.png          # Visual 1: Word Cloud image
+├── crm_tag_distribution.png     # Visual 2: Tag frequency bar chart
+├── sentiment_breakdown.png      # Visual 3: Sentiment pie chart
+└── README.md                    # Project documentation
